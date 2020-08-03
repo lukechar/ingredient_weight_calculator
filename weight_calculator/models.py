@@ -1,7 +1,7 @@
 from django.db import models
 from django import forms
 
-# Ingredient tuples format: ([Ingredient name], [Ingredient density in grams/liter])
+# Ingredients
 INGREDIENTS = (
     (None, 'Select Ingredient'),
     (528.34, 'All-Purpose Flour'),
@@ -18,7 +18,7 @@ INGREDIENTS = (
     (1000.0, 'Water'),
 )
 
-# Volume units tuples format: ([unit name], [liters per unit])
+# Volume units
 VOLUME_UNITS = (
     (0.236588, 'Cups'),
     (0.946353, 'Quarts'),
