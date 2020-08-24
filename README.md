@@ -11,3 +11,5 @@ The app is still in-progress, but is fully functional at this point and it has s
 Aesetic improvements to come, but I plan on keeping the UI relatively simple + clean. The frontend utilizes the Twitter Bootstrap framework and is mobile-friendly.
 
 Suggestions and pull requests welcome.
+
+This app is hosted on my website here: https://www.lukeacharbonneau.com/ingredient_weight_calculator/
