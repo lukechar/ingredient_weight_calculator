@@ -56,7 +56,7 @@
     $('#calculator-form').change(function(e) {
         e.preventDefault();
         $.ajax({
-            url: '/ingredients_weight_calculator/do_calc/',
+            url: 'do_calc/',
             data: {
                 'ingredient': $('#id_ingredient').val(),
                 'volume': $('#id_volume').val(),

@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ingredients_weight_calculator/', include('weight_calculator.urls')),
+    path('', include('weight_calculator.urls')),
 ]
