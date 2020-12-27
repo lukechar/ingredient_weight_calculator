@@ -25,7 +25,7 @@ SECRET_KEY = 'SECRET!' # Generate production secret key and insert here
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '192.168.1.24']
+ALLOWED_HOSTS = ['http://django-env-weight-calc.eba-3pgwa3cw.us-west-2.elasticbeanstalk.com/', '127.0.0.1']
 
 
 # Application definition
