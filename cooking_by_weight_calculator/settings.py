@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import json
 from re import L
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -32,7 +33,7 @@ else:
 if DEBUG:
     ALLOWED_HOSTS = ['django-env-weight-calc.eba-3pgwa3cw.us-west-2.elasticbeanstalk.com', '127.0.0.1']
 else:
-    ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS')
+    ALLOWED_HOSTS = json.loads(os.environ.get('ALLOWED_HOSTS'))
 
 
 # Application definition
