@@ -3,6 +3,8 @@ source /opt/python/current/env
 # echo $SSL_DOMAIN
 # set email in env variable as SSL_EMAIL
 # echo $SSL_EMAIL
+echo "SSL domain set as ${SSL_DOMAIN}"
+echo "SSL email set as ${SSL_EMAIL}"
 CERT_FILE=/etc/letsencrypt/live/$DOMAIN/cert.pem
 if test -f "$CERT_FILE"; then
     exit
