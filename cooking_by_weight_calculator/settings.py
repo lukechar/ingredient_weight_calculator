@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from re import L
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,13 +20,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '-e*pf7^@+o74xurjd@f*pidf$z*=cmig0&-pnld*^5+3zul0gh' # Generate production secret key and insert here
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ['django-env-weight-calc.eba-3pgwa3cw.us-west-2.elasticbeanstalk.com', '127.0.0.1']
+# SECURITY WARNING: keep the secret key used in production secret!
+if DEBUG:
+    SECRET_KEY = 'SECRET!' # Generate production secret key and insert here
+else:
+    SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+
+if DEBUG:
+    ALLOWED_HOSTS = ['django-env-weight-calc.eba-3pgwa3cw.us-west-2.elasticbeanstalk.com', '127.0.0.1']
+else:
+    ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS')
 
 
 # Application definition
