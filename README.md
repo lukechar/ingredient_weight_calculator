@@ -12,4 +12,4 @@ Aesetic improvements to come, but I plan on keeping the UI relatively simple + c
 
 Suggestions and pull requests welcome.
 
-This app is hosted on my website here: http://django-env-weight-calc.eba-3pgwa3cw.us-west-2.elasticbeanstalk.com/
+This app is hosted here: ChefCalc.com
