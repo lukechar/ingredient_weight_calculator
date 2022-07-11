@@ -31,9 +31,14 @@ else:
     SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 if DEBUG:
-    ALLOWED_HOSTS = ['django-env-weight-calc.eba-3pgwa3cw.us-west-2.elasticbeanstalk.com', '127.0.0.1']
+    ALLOWED_HOSTS = ['127.0.0.1']
 else:
     ALLOWED_HOSTS = json.loads(os.environ.get('ALLOWED_HOSTS'))
+
+if DEBUG:
+    GTAG_ID = 'GTAG_ID_HERE'
+else:
+    GTAG_ID = os.environ.get('GTAG_ID')
 
 
 # Application definition

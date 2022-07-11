@@ -1,6 +1,8 @@
+from ast import Gt
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
 from .models import IngredientCalcForm
+from django.conf import settings
 
 
 OUNCES_IN_GRAM = 0.035274
@@ -8,7 +10,7 @@ LBS_IN_GRAM = 0.00220462442
 
 def calculator_form(request):
     form = IngredientCalcForm()
-    return render(request, 'weight_calculator/calculator.html', {'form': form, 'title': 'Ingredient Weight Calculator'})
+    return render(request, 'weight_calculator/calculator.html', {'form': form, 'title': 'Ingredient Weight Calculator', 'googleSiteTag': settings.GTAG_ID})
 
 def calculate(request):
     if not request.GET.get('volume', None) or not request.GET.get('volume_units', None) or not request.GET.get('ingredient', None):
