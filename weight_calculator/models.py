@@ -32,6 +32,8 @@ INGREDIENTS = (
         )
     ),
     ('Other Dry Ingredients', (
+        (1378.00, 'Salt, fine table'),
+        (1282.00, 'Salt, granulated'),
         (836.90, 'Sugar, white'),
         (801.00, 'Sugar, powdered'),
         (430.00, 'Cocca Powder'),
