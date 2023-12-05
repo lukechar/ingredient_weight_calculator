@@ -12,4 +12,4 @@ Aesetic improvements to come, but I plan on keeping the UI relatively simple + c
 
 Suggestions and pull requests welcome.
 
-This app is hosted here: [FlourGenius.com](https://www.flourgenius.com/)https://www.flourgenius.com/
+This app is hosted here: [FlourGenius.com](https://www.flourgenius.com/)
